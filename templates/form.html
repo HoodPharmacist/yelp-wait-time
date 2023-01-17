@@ -1,0 +1,23 @@
+<html>
+  <header><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script></header>
+
+<form style="text-align: center;" method="POST" action="{{url_for('results')}}">
+  <br>
+    <label for="user_input">Please enter your Yelp login information below:</label>
+    <h1>Email</h1>
+    <input type="text" id="user_input" name="email">
+    <h1>Pass</h1>
+    <input type="text" id="user_input" name="password">
+    <input type="submit" value="Run" onclick="$('#loading').show();">
+  </form>
+
+  <style>
+    .loading { 
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+  </style>
+
+  <div id="loading" class="loading" style="display:none;"><img src="https://i.chzbgr.com/full/9487921664/h34F11B2B/animal-white-fluffy-samoyed-dog-eating-long-noodle-spaghetti" alt="" />Loading!!!</div>
+</html>
+
