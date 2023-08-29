@@ -7,7 +7,7 @@ This Flask app utilizes Selenium to scrape restaurant names and wait times withi
 
 Before running this app, ensure that you have the following installed:
 
-- Python (version 3.x)
+- Python (version 3.10)
 - Selenium (`pip install selenium`)
 - ChromeDriver
 
@@ -28,22 +28,16 @@ Before running this app, ensure that you have the following installed:
 
 3.  Install the required Python packages:
 
-```bash
-pip install -r requirements.txt
-```
-   
-## Configuration
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Before running the app, you need to configure your Yelp login credentials. Open the app.py file and find the yelp_login function. Replace the email and password parameters with your Yelp account email and password:
+4. Run the application
 
-```bash
-def yelp_login(email, password):
-    # ...
-    driver.find_element(By.XPATH, "/html/body/div[2]/div[2]/div/div[4]/div[1]/div/div/div[5]/div[1]/form/input[2]").send_keys(email)
-    driver.find_element(By.XPATH, "/html/body/div[2]/div[2]/div/div[4]/div[1]/div/div/div[5]/div[1]/form/input[3]").send_keys(password)
-    # ...
+   ```bash
+   npm install
+   ```
 
-```
 ## Contributing
 
 Contributions are welcome! If you have any suggestions or improvements, please submit a pull request or open an issue in this repository.
