@@ -29,13 +29,13 @@ Before running this app, ensure that you have the following installed:
 3.  Install the required Python packages:
 
    ```bash
-   pip install -r requirements.txt
+   npm install
    ```
 
-4. Run the application
+4. Run the application:
 
    ```bash
-   npm install
+   flask run
    ```
 
 ## Contributing
